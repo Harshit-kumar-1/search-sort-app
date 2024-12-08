@@ -1,0 +1,90 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  font-family: 'Arial', sans-serif;
+  max-width: 600px;
+  margin: 70px auto;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.searchBar {
+  margin-bottom: 20px;
+}
+
+.searchInput {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.checkboxLabel {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: #555;
+}
+
+.checkboxLabel input {
+  margin-right: 8px;
+}
+
+.productTable {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.productTable th,
+.productTable td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+.productTable th {
+  background-color: #f8f8f8;
+  font-weight: bold;
+  color: #333;
+}
+
+.categoryRow th {
+  background-color: #e6f3ff;
+  color: #0066cc;
+}
+
+.outOfStock {
+  color: #ff0000;
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 10px;
+    margin-top: unset;
+  }
+
+  .checkboxLabel{
+    justify-content: center;
+  }
+
+  .productTable th,
+  .productTable td {
+    padding: 8px;
+  }
+}
